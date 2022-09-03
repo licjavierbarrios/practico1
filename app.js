@@ -25,12 +25,13 @@ function getCountryTranslatedName(isoCode, language) {
  */
 function getCountriesBySubregion(subregion) {
 	//Complete with your code
+	return countries.filter((country) => country.subregion === subregion);
 }
 
 function main() {
 	console.log("///// Ejercicio 1 /////\n", getCountryByIso3("ARG"), "\n");
 	console.log("///// Ejercicio 2 /////\n", getCountryTranslatedName("ARG", "ja"), "\n");
-	// console.log("///// Ejercicio 3 /////\n", getCountriesBySubregion("South America"), "\n");
+	console.log("///// Ejercicio 3 /////\n", getCountriesBySubregion("South America"), "\n");
 }
 
 main();
